@@ -1,0 +1,358 @@
+#bnw{
+    position: absolute;
+    top:40vh;
+    left:0px;
+}
+
+#colored{
+    position: absolute;
+    top:40vh;
+    left:0px;
+    clip-path:polygon(0 0,0.01% 0,0.01% 100%,0 100%);
+}
+
+.img-container{
+    position: relative;
+    width:150px;
+    left: -200px;
+    margin:0px auto;
+}
+
+.fd-loader {
+    position: fixed; 
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0; 
+    z-index: 50; 
+    background-color: #000000;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/marvel/bg-02.jpg) !important;
+}
+
+.event-title-main-img {
+    width: 120%;
+    height: 100%;
+    margin-left: -7%;
+}
+
+.color-event-title  {
+    color: white;
+    width: 120%;
+    padding-top: 10px;
+    margin-left: -7%;
+    align-content: center;
+    line-height: 125px !important;
+}
+
+.background-article-img {
+    background-repeat: no-repeat !important; 
+    background-size:contain !important;
+    background-position: center;
+    background-image: url("../img/meta19.png") !important
+}
+
+.tags {
+    margin: 1rem 0 2rem 0;
+    padding: .5rem 0 1rem;
+    line-height: 1.8
+}
+
+@media (max-width:800px) {
+    .tags {
+        margin: 0
+    }
+}
+
+.tags p {
+    color: #7a7a8c;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .66rem;
+    white-space: nowrap;
+    border: 3px solid #28242f;
+    border-radius: 2rem;
+    padding: .2rem .85rem .25rem .85rem
+}
+
+@media screen and (max-width:1200px)
+{
+    .tags p {
+        font-size: 3em;
+    }
+}
+
+.tags p:focus,
+.tags p:hover {
+    color: #03a9f4;
+    border-color: #fff
+}
+
+.header-card {
+   //background-image: -webkit-gradient(linear, left bottom, left top, from(#ff8a00), to(#da1b60));
+    //background-image: linear-gradient(to top, #ff8a00, #da1b60);
+    background-image: linear-gradient(to bottom, #ff0000, #ff211c, #fe332e, #fc413d, #f94d4b, #fe5e6b, #ff7189, #fd84a3, #f9a5cd, #f2c5e9, #f1e3f9, #fdfdfd);
+    position: relative;
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 0 4rem 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content:center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 320px;
+    flex: 0 0 220px
+}
+
+.header-card p {
+    margin: 0;
+    font-size: 1.8rem
+}
+
+@media (max-width:1200px) {
+    .header-card {
+        -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        -webkit-box-flex: 0;
+        -ms-flex: 0;
+        flex: 0;
+        width: 110px;
+        margin-right: 1rem
+    }
+}
+
+.header-card-title {
+    font-size:3rem;
+    margin: 0 0 .5rem 0;
+    vertical-align: middle
+}
+
+.popular-articles {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: calc(100vw - 71px);
+    margin: 0 0 8rem 0;
+    padding: 2rem 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch
+}
+
+.popular-articles::-webkit-scrollbar {
+    width: 10px;
+    height: 10px
+}
+
+.popular-articles::-webkit-scrollbar-thumb {
+    background: -webkit-gradient(linear, left top, right top, from(#da1b60), to(#ff8a00));
+    background: linear-gradient(to right, #da1b60, #ff8a00);
+    border-radius: 10px;
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4)
+}
+
+.popular-articles::-webkit-scrollbar-track {
+    background: linear-gradient(to right, #201c29, #201c29 1px, #17141d 1px, #17141d)
+}
+
+@media screen and  (max-width:1200px) {
+    .popular-articles {
+        width: 100%;
+        padding-bottom: 2rem;
+        margin-bottom: 6rem;
+        -ms-scroll-snap-points-x: repeat(250px);
+        scroll-snap-points-x: repeat(250px);
+        -ms-scroll-snap-type: mandatory;
+        scroll-snap-type: mandatory
+    }
+    .popular-articles .mini-card {
+        scroll-snap-align: start
+    }
+}
+
+@media (max-width:1200px) {
+    .popular-articles {
+        padding-left: 0
+    }
+}
+
+.popular-header .edit-popular {
+    position: absolute;
+    top: 5px;
+    right: 5px
+}
+
+.mini-card-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.mini-card {
+    width: 300px;
+    min-height: 350px;
+    padding: 1.5rem;
+    border-radius: 16px;
+  background: #17141d;
+    -webkit-box-shadow: -1rem 0 3rem #000;
+    box-shadow: -1rem 0 3rem #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-transition: .2s;
+    transition: .2s;
+    margin: 0
+    -webkit-animation: pulsate 1s infinite ease-in-out alternate;
+	-webkit-animation-timing-function: ease-out;
+	animation-timing-function: ease-out;
+    animation: pulsate 1s infinite ease-in-out alternate;
+    cursor: pointer;
+}
+
+.mini-card h2 {
+    font-size: 20px;
+    margin: .25rem 0 auto 0
+}
+
+.mini-card:not(:first-child) {
+    margin-left: -90px
+}
+
+.mini-card .tags a {
+    font-size: .5rem
+}
+
+.mini-card:focus-within,
+.mini-card:hover {
+    -webkit-transform: translate(0, -1rem);
+    transform: translate(0, -1rem)
+}
+
+.mini-card:focus-within~.mini-card,
+.mini-card:hover~.mini-card {
+    -webkit-transform: translateX(130px);
+    transform: translateX(130px)
+}
+
+@media screen and  (max-width:1200px) {
+    .mini-card {
+        width: 380px;
+        height: 450px;
+    }
+    .mini-card:not(:first-child) {
+        margin-left: -130px
+    }
+    .mini-card:hover {
+        -webkit-transform: translate(0, -1rem);
+        transform: translate(0, -1rem)
+    }
+    .mini-card:hover~.mini-card {
+        -webkit-transform: translateX(130px);
+        transform: translateX(130px)
+    }
+}
+
+@media screen and (max-width:800px) {
+    .mini-card {
+        width: 220px
+    }
+    .mini-card:not(:first-child) {
+        margin-left: -30px
+    }
+    .mini-card:hover {
+        -webkit-transform: translate(0, -1rem);
+        transform: translate(0, -1rem)
+    }
+    .mini-card:hover~.mini-card {
+        -webkit-transform: translateX(30px);
+        transform: translateX(30px)
+    }
+}
+
+.mini-article-subhead {
+    font-size: 14px;
+    margin: 0 0 1rem 0;
+        -webkit-animation: pulse 1s infinite ease-in-out alternate;
+	-webkit-animation-timing-function: ease-out;
+	animation-timing-function: ease-out;
+    animation: pulse 1s infinite ease-in-out alternate;
+    cursor: none;
+}
+
+.mini-article-card-header {
+    margin-bottom: auto;
+    background: transparent;
+}
+
+.mini-article-meta {
+    font-size: 14px
+}
+
+.mini-article-meta .author-name {
+    display: block;
+    position: relative
+}
+
+.mini-article-meta .author-avatar img {
+    width: 40px;
+    height: 40px
+}
+
+.mini-article-meta .author-avatar .half-circle {
+    width: 60px;
+    height: 48px
+}
+
+.mini-article-byline {
+    margin: 3rem 0 0 0;
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.mini-article-byline .author-avatar,
+.mini-article-byline .author-name-area {
+    grid-area: auto
+}
+
+body {
+    scrollbar-color: linear-gradient(to right, #da1b60, #ff8a00);
+    scrollbar-width: 10px;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px
+}
+
+body::-webkit-scrollbar-thumb {
+    background: -webkit-gradient(linear, left top, right top, from(#da1b60), to(#ff8a00));
+    background: linear-gradient(to right, #da1b60, #ff8a00);
+    border-radius: 10px;
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4)
+}
+
+body::-webkit-scrollbar-track {
+    background: linear-gradient(to right, #201c29, #201c29 1px, #17141d 1px, #17141d)
+}
